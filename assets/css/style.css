@@ -373,6 +373,20 @@ h6 {
   right: 0;
 }
 
+.google-sheet-embed {
+  overflow: hidden; /* Ensures the content outside this area is not shown */
+  position: relative; /* Needed to position the iframe */
+  height: 1450px; /* Adjust based on your needs, considering hiding the title */
+  width: 100%; /* Responsive width */
+}
+.google-sheet-iframe {
+  position: absolute;
+  top: -30px; /* Adjust this value to hide the top part, including the title */
+  left: 0;
+  width: 100%;
+  height: 1480px; /* Slightly larger height to include the iframe's full content */
+}
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
